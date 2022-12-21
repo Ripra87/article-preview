@@ -1,0 +1,251 @@
+
+/**************GENERAL***************/
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Manrope', sans-serif;
+    font-size: 13px;
+    background-color: hsl(210, 46%, 95%);
+}
+
+    main {
+        width: 100vw;
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+/*****************CARD LAYOUT******************/
+        .card-content {
+            width: 60rem;
+            height: 18.75rem;
+            display:flex;
+            flex-direction: row;
+
+        }
+
+/*************DRAWERS IMAGE****************/
+
+            .image img {
+                width: 27rem;
+                height: 18.75rem;
+                border-radius: 15px 0 0 15px;
+            }
+
+/******************ARTICLE SECTION****************/
+
+            .article-content {
+                display: inline-block;
+                position: relative;
+                right: 4.80rem;
+                background-color: white;
+                border-radius: 0 15px 15px 0;
+                height: 18.75rem;
+                width: 35rem;
+            }
+                .text p {
+                    letter-spacing: 1.3px;
+                    line-height: 1.5;
+                    color: hsl(214, 17%, 51%);
+                    width: 29.06rem;
+                }
+
+                    h1 {
+                        color:hsl(217, 19%, 35%);
+                    }
+
+/***************** PROFILE SECTION ****************/
+
+            .writer {
+                display: flex;
+                flex-direction: row;
+            }
+
+                .text, .writer {
+                    margin-left: 3rem;
+                }
+
+                .michelle-img{
+                    width: 3rem;
+                    height: 3rem;
+                    border-radius: 100%;
+                    margin-top: 5px;
+                }
+
+                .writer-info {
+                    margin-left: 0.8rem;
+                    width: 8.20rem;
+                }
+
+                    h2 {
+                        color:hsl(217, 19%, 35%);
+                        margin: 8px 0 3px 0;
+                        font-size: 15px;
+                        font-weight: bolder;
+                    }
+
+                    .writer-info p {
+                        margin: 0;
+                        color: hsl(214, 17%, 51%);
+                    }
+
+/**************** SHARING SECTION *******************/
+                .share-icon {
+                    display: flex;
+                    align-items: center;
+                }
+
+                    .img-background {
+                        border: 0;
+                        background-color: hsl(210, 46%, 95%);
+                        width: 2rem;
+                        height: 2rem;
+                        border-radius: 100%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        margin-top:1rem;
+                        margin-left: 13rem;
+                    }
+
+                    .share {
+                        color:hsl(214, 17%, 51%);
+                        border-radius: 15px;
+                        background-color: hsl(217, 19%, 35%);
+                        position: absolute;
+                        bottom: 6rem;
+                        right: -3rem;
+                        width: 15rem;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-around;
+                        align-items: center;
+                    }
+
+                        .share img {
+                            width: 1.37rem;
+                            height: 1.37rem;
+                        }
+
+/*********BUTTON ACTIVE STATES******/
+
+
+                    .img-background:hover {
+                        background-color: hsl(217, 19%, 35%); ;
+                        
+                    }
+
+
+                
+
+/*********FOOTER***********/   
+             
+footer {
+    font-size: 11px; 
+    text-align: center; 
+    color: hsl(228, 45%, 44%);
+}
+    
+    
+/****************SCRIPT PROPERTIES*******************/
+
+.hidden {
+    display: none;
+}
+
+
+         
+         
+         
+         
+         
+         
+/*********** MEDIA FOR MOBILE *************/
+
+@media screen and (max-width: 1440px) {
+
+    .card-content {
+        flex-direction: column;
+        margin-top: 0;
+        width: 25rem;
+    }
+
+    .image {
+        width: 25rem;
+        height:18.75rem;
+    }
+
+    .image img{
+        width: 25rem;
+        border-radius: 15px 15px 0 0;
+    }
+
+    .article-content {
+        width: 25rem;
+        position:relative;
+        left: 0;
+        bottom: 3rem;
+        display: flex;
+        flex-direction: column;
+        border-radius: 0 0 15px 15px;
+        height: 30rem;
+    }
+
+    .writer {
+        margin: 1rem 0 1rem 3rem;
+    }
+
+        h1, .text p {
+            width: 19.6rem;
+        }
+
+        h1 {
+            margin-top: 2.5rem;
+            font-size: 20px;
+        }
+
+        .text p {
+            font-size: 13px;
+        }
+
+        .share-icon {
+            margin: 5px 0 -16px 0;
+            border-bottom-right-radius: 15px;
+            padding-bottom: 20px;
+            width: 10rem;
+            
+        }
+
+       
+       
+            .img-background {
+                margin-left: 6rem;
+                
+            }
+
+            .share {
+                width: 15rem;
+                height: 4.25rem;
+                border-radius: 0 0 0 15px;
+                bottom: 0;
+                left: 0;
+
+            }
+
+/*********** JS MEDIA STYLE ******/
+
+            .background {
+                background-color: hsl(217, 19%, 35%);
+            }
+
+
+
+}
+
